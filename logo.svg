@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="Semana Robusta">
+  <title>Semana Robusta</title>
+  <!-- marca -->
+  <g>
+    <rect x="20" y="4"  width="40" height="12" rx="2" fill="#12161A"/>
+    <rect x="4"  y="26" width="56" height="12" rx="2" fill="#2B4F72"/>
+    <rect x="4"  y="48" width="40" height="12" rx="2" fill="#12161A"/>
+  </g>
+  <!-- wordmark -->
+  <text x="84" y="27" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="19" font-weight="600" letter-spacing="3.4" fill="#12161A">SEMANA</text>
+  <text x="84" y="53" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="19" font-weight="300" letter-spacing="3.4" fill="#12161A">ROBUSTA</text>
+</svg>

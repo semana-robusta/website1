@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semana Robusta, Lda.</title>
+<meta name="description" content="Semana Robusta, Lda. — Estrada de S. Domingos, n.º 74, 6005-010 Alcains. geral@semanarobusta.pt">
+<meta property="og:title" content="Semana Robusta, Lda.">
+<meta property="og:description" content="Estrada de S. Domingos, n.º 74, 6005-010 Alcains">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='20' y='4' width='40' height='12' rx='2' fill='%2312161A'/%3E%3Crect x='4' y='26' width='56' height='12' rx='2' fill='%232B4F72'/%3E%3Crect x='4' y='48' width='40' height='12' rx='2' fill='%2312161A'/%3E%3C/svg%3E">
+
+<style>
+  :root{
+    --ink:      #12161A;
+    --paper:    #FAF9F7;
+    --accent:   #2B4F72;
+    --muted:    #6E7479;
+    --rule:     #E2E0DB;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:    #F0EFEC;
+      --paper:  #0E1113;
+      --accent: #8FB4D9;
+      --muted:  #8D9498;
+      --rule:   #24292D;
+    }
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+
+  body{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(3rem,10vh,6rem);
+    padding:clamp(1.5rem,6vw,4rem);
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  main{
+    width:100%;
+    max-width:34rem;
+    text-align:center;
+  }
+
+  /* ---- marca ---- */
+  .mark{
+    width:clamp(44px,9vw,58px);
+    height:auto;
+    display:block;
+    margin:0 auto clamp(1.75rem,4vw,2.5rem);
+  }
+  .mark .bar{ fill:var(--ink); }
+  .mark .bar--accent{ fill:var(--accent); }
+
+  /* ---- wordmark ---- */
+  h1{
+    margin:0;
+    font-size:clamp(1.5rem,5.5vw,2.25rem);
+    line-height:1.15;
+    font-weight:600;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+  }
+  h1 .light{
+    display:block;
+    font-weight:200;
+  }
+  /* ---- separador ---- */
+  .rule{
+    width:2.5rem;
+    height:2px;
+    margin:clamp(2.25rem,6vw,3rem) auto;
+    background:var(--accent);
+    border:0;
+    border-radius:2px;
+  }
+
+  /* ---- contactos ---- */
+  .contact{
+    display:flex;
+    flex-direction:column;
+    gap:1.75rem;
+    font-style:normal;
+  }
+  .label{
+    display:block;
+    margin-bottom:.4rem;
+    font-size:.68rem;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  .value{
+    font-size:clamp(.98rem,2.4vw,1.06rem);
+    line-height:1.65;
+  }
+
+  a{
+    color:inherit;
+    text-decoration:none;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:2px;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  a:hover,a:focus-visible{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+  }
+  a:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:4px;
+    border-radius:2px;
+  }
+  /* a morada ocupa duas linhas — sublinhado só no hover, evita ruído */
+  .contact a[href^="https"]{ border-bottom-color:transparent; }
+  .contact a[href^="https"]:hover,
+  .contact a[href^="https"]:focus-visible{ border-bottom-color:var(--accent); }
+
+  footer{
+    font-size:.72rem;
+    letter-spacing:.06em;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+  <main>
+    <svg class="mark" viewBox="0 0 64 64" role="img" aria-label="Semana Robusta">
+      <rect class="bar"          x="20" y="4"  width="40" height="12" rx="2"/>
+      <rect class="bar bar--accent" x="4" y="26" width="56" height="12" rx="2"/>
+      <rect class="bar"          x="4"  y="48" width="40" height="12" rx="2"/>
+    </svg>
+
+    <h1>Semana<span class="light">Robusta</span></h1>
+
+    <hr class="rule">
+
+    <address class="contact">
+      <div>
+        <span class="label">Morada</span>
+        <span class="value">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Estrada+de+S.+Domingos+74%2C+6005-010+Alcains"
+             target="_blank" rel="noopener noreferrer">
+            Estrada de S. Domingos, n.º 74<br>6005-010 Alcains
+          </a>
+        </span>
+      </div>
+
+      <div>
+        <span class="label">Email</span>
+        <span class="value">
+          <a href="mailto:geral@semanarobusta.pt">geral@semanarobusta.pt</a>
+        </span>
+      </div>
+    </address>
+  </main>
+
+  <footer>&copy; <span id="ano">2026</span> Semana Robusta, Lda.</footer>
+
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
